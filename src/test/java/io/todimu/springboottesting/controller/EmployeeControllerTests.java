@@ -42,7 +42,7 @@ public class EmployeeControllerTests {
         savedEmployee = Employee.builder()
                 .firstName("Todimu")
                 .lastName("Isewon")
-                .email("todi@gmail.com")
+                .email("toddy@gmail.com")
                 .build();
     }
 
