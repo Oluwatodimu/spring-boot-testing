@@ -1,5 +1,6 @@
 package io.todimu.springboottesting.repository;
 
+import io.todimu.springboottesting.integration.AbstractionBasedBaseTest;
 import io.todimu.springboottesting.model.Employee;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -15,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class EmployeeRepositoryITests {
+public class EmployeeRepositoryITests extends AbstractionBasedBaseTest {
 
     @Autowired private EmployeeRepository employeeRepository;
 
