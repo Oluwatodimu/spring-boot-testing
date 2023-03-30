@@ -59,4 +59,26 @@ public class EmployeeController {
         employeeService.deleteEmployee(employeeId);
         return new ResponseEntity<>("Employee deleted successfully", HttpStatus.OK);
     }
+
+//    @RunWith(MockitoJUnitRunner.class)
+//    public class MyControllerTest {
+//
+//        @Mock
+//        private MyService myService;
+//
+//        @Test
+//        public void testGetMessage() {
+//            // Create a mock supplier and stub the get() method to return "Hello, World!"
+//            Supplier<String> mockSupplier = Mockito.mock(Supplier.class);
+//            Mockito.when(mockSupplier.get()).thenReturn("Hello, World!");
+//
+//            // Create an instance of the controller and inject the mock supplier and service
+//            MyController controller = new MyController(mockSupplier, myService);
+//
+//            // Call the getMessage() method on the controller and verify the result
+//            String result = controller.getMessage();
+//            Assert.assertEquals("Hello, World!", result);
+//        }
+//    }
+
 }
